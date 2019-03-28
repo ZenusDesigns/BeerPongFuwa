@@ -1,0 +1,220 @@
+body, html {
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+
+
+a:visited {
+    color:white;
+}
+
+a {
+    color: white;
+}
+
+link:visited {
+    color: white;
+}
+
+.ruleshead {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+    display: block;
+    padding: 5px;
+}
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.8em;
+    color: #ddd;
+}
+
+ul {
+    margin: 0 auto;
+}
+
+
+.rulestext {
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding: 15px;
+    line-height: 35px;
+}
+
+.rulesimg {
+    display: block;
+    max-height: 250px;
+    margin: 0 auto;
+}
+
+.pimage1, .pimage2, .pimage3, .pimage4, .pimage5{
+    position: relative;
+    opacity: 0.65;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*
+  fixed = Parallax
+  scroll = Normal
+*/
+}
+
+.pimage1 {
+    background-image:url('../img/1.jpg');
+    min-height:100%;
+}
+.pimage2 {
+    background-image:url('../img/2.jpg');
+    min-height:350px;
+}
+.pimage3 {
+    background-image:url('../img/3.jpg');
+    min-height:350px;  
+}
+
+.pimage4 {
+    background-image:url('../img/4.jpg');
+    min-height:350px;  
+}
+
+.pimage5 {
+    background-image:url('../img/5.jpg');
+    min-height:350px;  
+}
+
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+
+}
+
+
+.section-light{
+    background-color:#f4f4f4;
+    color:#666; 
+}
+
+.section-dark{
+    background-color:#27292a;
+    color:#ddd;
+    box-shadow: #000 10px 0px 10px 10px #ccc;
+}
+
+.ptext{
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.border {
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    opacity: 0.8;
+}
+
+.border2 {
+    background-color:#111;
+    font-size: 12px;
+    color:#fff;
+    padding:20px;
+    opacity: 0.8;
+    display: block;
+    margin-top: 50px;
+}
+
+.border.trans {
+    background-color:transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.border.trans.bottom {
+    background-color:transparent;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+    color:white;
+    text-shadow: 4px 4px 6px #000000;
+}
+
+
+#Avatartext {
+    display: block;
+}
+
+.formulartext {
+    padding-left:200px;
+    padding-right: 200px; 
+    margin: 0% auto;
+}
+
+
+
+
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    margin: 0 auto;
+    background-color: transparent;
+    width: 302px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#282e34;
+    color: white;
+    transform: rotateY(180deg);
+  } 
