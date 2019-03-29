@@ -15,20 +15,20 @@
             <span class="border">
                 Beerpong Turnier
             </span>
-            <span class="border2">
-                Furtwangen
+            <span id="demo" class="border2">
+                
             </span>
         </div>
     </div>
 
 
     <section class="section section-dark">
-        <h2> Timer </h2>
+        <h2> Willkommen </h2>
         <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                    <iframe src="http://free.timeanddate.com/countdown/i6owm72x/n2018/cf100/cm0/cu5/ct0/cs1/ca0/co1/cr0/ss0/cacfff/cpcfff/pcff4040/tcfff/fs150/szw400/szh250/tatTime%20left%20to%20Event%20in/tacfff/tptTime%20since%20Event%20started%20in/tpcfff/iso2019-04-18T19:30:00/bo2" allowTransparency="true" frameborder="0" width="400" height="250"> </iframe>
-              </div>
+                    <img class="avatarimg" src="./img/avatar.png" alt="Bild">
+            </div>
               <div class="flip-card-back">
                 <h1> Aktuelle Phase:</h1>
                 <p> Anmeldephase </p>
@@ -85,7 +85,7 @@
         <p class="formulartext">
             Um Euer Team für das Turnier anzumelden ladet bitte das vorliegende <a href="./files/Anmeldeformular.docx" download="">Muster-Formular</a> , sowie den <a href="./files/Spielerpass.docx" download="">Spielerpass</a> runter und sendet diese ausgefüllt an folgende E-Mail Adresse: <a href="mailto:beerpongfuwa@gmail.com">beerpongfuwa@gmail.com</a>
         </p>
-        <p class="rulestext"> <span class="ruleshead"> Angemeldete Teams </span> - </p>
+        <p class="rulestext"> <span class="ruleshead"> Angemeldete Teams: </span> - </p>
 
     </section>
 
@@ -133,5 +133,34 @@
     </div>
 
 </body>
+
+
+<script>
+
+    var countDownDate = new Date("Apr 18, 2019 19:30:00").getTime();
+    var countDownfunction = setInterval(function() {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+    
+        var days = Math.floor(distance/(1000 * 60 * 60 *24));
+        var hours = Math.floor((distance %(1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) /1000);
+
+
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  
+        if (distance<0) {
+          clearInterval(countDownfunction);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    },1000);
+
+
+
+
+</script>
 
 </html>
