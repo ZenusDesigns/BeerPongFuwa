@@ -228,7 +228,7 @@ ul {
   } 
 
 
-@media(max-width:480px) {
+@media(max-width:600px) {
     
 .pimage1 {
     background-image:url('../img/1.jpg');
@@ -261,6 +261,18 @@ ul {
 
 }
 
+.flip-card {
+
+    margin: 0 auto;
+    background-color: transparent;
+    width: 302px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    right: 5%;
+    position: relative;
+
+}
 .rulesimg {
 
     display: block;
