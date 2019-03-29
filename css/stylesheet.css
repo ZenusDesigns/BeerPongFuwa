@@ -269,6 +269,12 @@ ul {
 
 }
 
+.flip-card:hover .flip-card-inner {
+    transform: none;
+  }
+
+
+
 .flip-card {
 
     margin: 0 auto;
@@ -321,7 +327,10 @@ ul {
         position: relative;
     
     }
-
+    
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+      }
 
     .border.trans { 
         position: relative;
@@ -340,6 +349,9 @@ ul {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: initial;
+  }
 
+  .flip-card:hover .flip-card-inner {
+    transform: none;
   }
   }
