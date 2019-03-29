@@ -226,3 +226,61 @@ ul {
     color: white;
     transform: rotateY(180deg);
   } 
+
+
+@media(max-width:480px) {
+    
+.pimage1 {
+    background-image:url('../img/1.jpg');
+    min-height:100%;
+}
+.pimage2 {
+    background-image:url('../img/2.jpg');
+    min-height:450px;
+}
+.pimage3 {
+    background-image:url('../img/3.jpg');
+    min-height:450px;  
+}
+
+.pimage4 {
+    background-image:url('../img/4.jpg');
+    min-height:450px;  
+}
+
+.pimage5 {
+    background-image:url('../img/5.jpg');
+    min-height:100%;  
+}
+
+.formulartext {
+
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0% auto;
+
+}
+
+.rulesimg {
+
+    display: block;
+    max-height: 250px;
+    margin: 0 auto;
+    max-width: 180px;
+}
+.ptext {
+
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.border.trans { 
+    position: relative;
+    bottom: 120px;
+}
+  }
