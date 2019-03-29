@@ -323,4 +323,23 @@ ul {
     }
 
 
+    .border.trans { 
+        position: relative;
+        bottom: 120px;
+    }
+
+  }
+
+
+  @supports (-webkit-overflow-scrolling: touch) { 
+
+    .pimage1, .pimage2, .pimage3, .pimage4, .pimage5{
+        position: relative;
+        opacity: 0.65;
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+
+  }
   }
