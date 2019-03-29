@@ -233,24 +233,32 @@ ul {
 .pimage1 {
     background-image:url('../img/1.jpg');
     min-height:100%;
+    width:100%;
 }
 .pimage2 {
     background-image:url('../img/2.jpg');
     min-height:450px;
+    background-size:100%;
+    width:100%;
 }
 .pimage3 {
     background-image:url('../img/3.jpg');
-    min-height:450px;  
+    min-height:450px;
+    background-size:100%;
+    width:100%;  
 }
 
 .pimage4 {
     background-image:url('../img/4.jpg');
-    min-height:450px;  
+    min-height:450px;
+    background-size:100%;
+    width:100%;  
 }
 
 .pimage5 {
     background-image:url('../img/5.jpg');
-    min-height:100%;  
+    min-height:100%; 
+    width:100%; 
 }
 
 .formulartext {
