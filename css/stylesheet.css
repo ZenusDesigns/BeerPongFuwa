@@ -296,3 +296,23 @@ ul {
     bottom: 120px;
 }
   }
+
+
+
+  @media(max-width:375px) { 
+
+    .flip-card {
+
+        margin: 0 auto;
+        background-color: transparent;
+        width: 302px;
+        height: 250px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        right: 20%;
+        position: relative;
+    
+    }
+
+
+  }
